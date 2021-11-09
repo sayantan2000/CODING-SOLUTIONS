@@ -35,9 +35,10 @@ final_data={
             "Wind_Speed :":wind_speed,
           }
 print("Fetching Data : ")
-time.sleep(4)
+time.sleep(2)
 
 for i,j in final_data.items():
   print(i,j)
 #pprint(data)
 #print(data["data"]["statewise"])
+

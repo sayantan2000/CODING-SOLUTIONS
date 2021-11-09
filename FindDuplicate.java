@@ -14,6 +14,7 @@ FindDuplicate(null);
 FindDuplicate("Radio Jockey");
 FindDuplicate("aA");
 FindDuplicate("A");
+FindDuplicate("null");
 	}
 	
 	public static void  FindDuplicate(String str) {
