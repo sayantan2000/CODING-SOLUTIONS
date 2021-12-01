@@ -3,5 +3,10 @@
         "*.html": "html",
         "iostream": "cpp",
         "new": "cpp"
-    }
+    },
+    "python.testing.pytestArgs": [
+        "build"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
 }
