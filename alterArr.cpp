@@ -23,6 +23,6 @@ int main(void){
     int arr[6]={6,4,7,8,9,10};
    //sort(arr,arr+6);
 
-    alter(arr,6);
+  alter(arr,6);
     printArr(arr,6);
 }

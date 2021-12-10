@@ -35,7 +35,7 @@ final_data={
             "Wind_Speed :":wind_speed,
           }
 print("Fetching Data : ")
-time.sleep(2)
+time.sleep(1)
 
 for i,j in final_data.items():
   print(i,j)
