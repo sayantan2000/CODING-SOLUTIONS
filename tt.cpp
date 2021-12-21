@@ -44,8 +44,12 @@ class bichi{
 };
 
 int main(void){
-    bichi b1(true);
-    b1.setter("khanki","bichi",12,442254,6267458914);
-    b1.show();
+    bichi *ss=new bichi(true);
+    ss->setter("Sayantan","Sadhukhan",21,442254,7980692503);
+    ss->show();
+    cout<<"-------------"<<endl;
+    bichi *ak=new bichi(true);
+    ak->setter("Akash","kundu",19,14478,8890258654);
+    ak->show();
     return 0;
 }
