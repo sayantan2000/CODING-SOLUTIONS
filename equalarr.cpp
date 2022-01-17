@@ -1,39 +1,24 @@
-#include <bits/stdc++.h>
-#include <iostream>
+#include<iostream>
 using namespace std;
 
-void isequal(int arr[], int arr2[], int m, int n)
+bool equal_arr(int *arr,int *arr2,int m,int n){
+
+  if(m!=n)
+    return false;
+
+  for (int i = 0; i < n; i++)
 {
-
-  int k = 0;
-  if (m != n)
-  {
-    cout << "not equal" << endl;
-  }
-  else
-  {
-
-    for (int i = 0; i <m; i++)
-    {
-      if (arr[i] == arr2[i])
-      {
-        k = 1;
-      }
-    }
-  }
-  if (k == 0)
-  {
-    cout << "false";
-  }
-  else
-  {
-    cout << "True";
-  }
+    if (arr[i] != arr2[i]) return false;
 }
+return true;
+}
+int main(void){
+  int arr[5]={4,4,4,4,4};
+  int arr2[5]={4,4,5,4,4};
 
-int main(void)
-{
-  int arr[4] = {1, 1, 1, 45};
-  int arr2[5] = {2, 7, 1, 45,47};
-  isequal(arr, arr2, 4, 4);
+  if(equal_arr(arr,arr2,5,5))
+    cout<<"true"<<endl;
+  else
+     cout<<"false";
+  return 0;
 }
