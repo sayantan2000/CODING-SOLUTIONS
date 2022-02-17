@@ -22,6 +22,19 @@ int binarySearch(int arr[], int size, int key)
   }
   return -1;
 }
+//recursive binarysearch
+bool binarySearch(int *arr,int size,int key,int high,int low){
+  if(low>high) return false;
+  int mid=low+(low-high)/2;
+
+  if(arr[mid]==key) return true;
+
+  if(key>arr[mid])
+     return binarySearch(arr,size,key,high,mid+1);
+  else
+     return binarySearch(arr,size,key,mid-1,low); 
+
+}
 
 int firstoccurence(int *arr, int size, int key)
 {
@@ -90,7 +103,7 @@ int main(void)
 {
   int arr[5] = {4, 5, 8, 9, 46};
 
-  int m_arr[5] = {4, 6, 8, 9, 1};
+  /*int m_arr[5] = {4, 6, 8, 9, 1};
 
   int new_arr[5] = {4, 6, 6, 5, 8};
 
@@ -110,5 +123,11 @@ int main(void)
   }
 
   else
-    cout << "the element is not present Within the array";
+    cout << "the element is not present Within the array";*/
+  if(binarySearch(arr,5,8,5,0))
+    cout<<"found";
+  else
+    cout<<"Not Found";
+  return 0;
+
 }
