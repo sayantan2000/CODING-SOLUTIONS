@@ -1,5 +1,4 @@
 
-// Online C++ compiler to run C++ program online
 /*
 Input data: 4, 10, 3, 5, 1
          4(0)
